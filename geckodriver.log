@@ -1,0 +1,500 @@
+1678139595563	geckodriver	INFO	Listening on 127.0.0.1:54067
+1678139596115	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 15" "--remote-debugging-port" "36353" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileFoOMHX"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678139597846	Marionette	INFO	Marionette enabled
+1678139597855	Marionette	INFO	Listening on port 36875
+WebDriver BiDi listening on ws://localhost:36353
+Read port: 36875
+1678139598154	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFoOMHX/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:36353/devtools/browser/6d129640-affe-46cb-8e46-c6b875489e65
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1678139625767	geckodriver	INFO	Listening on 127.0.0.1:46161
+1678139626328	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 15" "--remote-debugging-port" "48679" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileznSFuf"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678139627663	Marionette	INFO	Marionette enabled
+1678139627671	Marionette	INFO	Listening on port 44761
+WebDriver BiDi listening on ws://localhost:48679
+Read port: 44761
+1678139627981	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileznSFuf/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:48679/devtools/browser/520bfd59-739c-4590-82e8-c661c21f9971
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678140082441	geckodriver	INFO	Listening on 127.0.0.1:58799
+1678140082508	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 15" "--remote-debugging-port" "35371" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3NSb5Q"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678140083861	Marionette	INFO	Marionette enabled
+1678140083869	Marionette	INFO	Listening on port 43861
+WebDriver BiDi listening on ws://localhost:35371
+Read port: 43861
+1678140084118	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3NSb5Q/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:35371/devtools/browser/64c7db8d-9632-4b87-9caa-7f15eb5adcf3
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678140090699	Marionette	INFO	Stopped listening on port 44761
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678140438136	geckodriver	INFO	Listening on 127.0.0.1:38723
+1678140438699	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 36" "--remote-debugging-port" "46667" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilemtoaNc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678140440139	Marionette	INFO	Marionette enabled
+1678140440147	Marionette	INFO	Listening on port 36413
+WebDriver BiDi listening on ws://localhost:46667
+Read port: 36413
+1678140440416	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemtoaNc/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:46667/devtools/browser/ce1615ac-7939-4426-8017-20246e7ea0f9
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678140686866	Marionette	INFO	Stopped listening on port 36413
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678140689014	Marionette	INFO	Stopped listening on port 43861
+1678190971334	geckodriver	INFO	Listening on 127.0.0.1:58043
+1678190971881	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... .0" "--remote-debugging-port" "43413" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileVzTR46"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678190973201	Marionette	INFO	Marionette enabled
+1678190973210	Marionette	INFO	Listening on port 43891
+WebDriver BiDi listening on ws://localhost:43413
+Read port: 43891
+1678190973459	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVzTR46/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:43413/devtools/browser/6d95c016-35c0-4d65-b5df-98604f50b6a9
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1678191125185	geckodriver	INFO	Listening on 127.0.0.1:57123
+1678191125743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 36" "--remote-debugging-port" "60651" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9UftAR"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678191127090	Marionette	INFO	Marionette enabled
+1678191127098	Marionette	INFO	Listening on port 43881
+WebDriver BiDi listening on ws://localhost:60651
+Read port: 43881
+1678191127367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9UftAR/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:60651/devtools/browser/ce8f9ec3-d0cb-4b15-810f-4776ab818c5c
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678191796576	geckodriver	INFO	Listening on 127.0.0.1:56567
+1678191797142	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... .0" "--remote-debugging-port" "39711" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileG0NZfC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678191798482	Marionette	INFO	Marionette enabled
+1678191798491	Marionette	INFO	Listening on port 39183
+WebDriver BiDi listening on ws://localhost:39711
+Read port: 39183
+1678191798757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileG0NZfC/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:39711/devtools/browser/32c15c2f-7ce2-49e3-a9ab-692d9e3c1cda
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678191887156	Marionette	INFO	Stopped listening on port 43881
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678191889375	Marionette	INFO	Stopped listening on port 39183
+1678192128895	geckodriver	INFO	Listening on 127.0.0.1:33797
+1678192129458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... .0" "--remote-debugging-port" "57217" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXDCXlG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678192130768	Marionette	INFO	Marionette enabled
+1678192130776	Marionette	INFO	Listening on port 37515
+WebDriver BiDi listening on ws://localhost:57217
+Read port: 37515
+1678192131192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXDCXlG/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:57217/devtools/browser/115a3b36-78d8-4a0b-92d9-60c5014e7461
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678192257282	geckodriver	INFO	Listening on 127.0.0.1:52309
+1678192257845	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 36" "--remote-debugging-port" "56351" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileskhqTh"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678192259374	Marionette	INFO	Marionette enabled
+1678192259383	Marionette	INFO	Listening on port 39175
+WebDriver BiDi listening on ws://localhost:56351
+Read port: 39175
+1678192259689	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678192260145	Marionette	INFO	Stopped listening on port 37515
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileskhqTh/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:56351/devtools/browser/4734057e-3b8c-40c8-a5c2-469337ae7659
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678192316714	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1678192352585	geckodriver	INFO	Listening on 127.0.0.1:36685
+1678192353155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 36" "--remote-debugging-port" "53077" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexF5m4f"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678192354463	Marionette	INFO	Marionette enabled
+1678192354471	Marionette	INFO	Listening on port 35239
+WebDriver BiDi listening on ws://localhost:53077
+Read port: 35239
+1678192354707	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexF5m4f/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678192358322	Marionette	INFO	Stopped listening on port 39175
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:53077/devtools/browser/07fd22d6-dc54-4834-94a7-230553d9cb08
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678192389680	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678192866443	geckodriver	INFO	Listening on 127.0.0.1:46375
+1678192867017	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... .0" "--remote-debugging-port" "42847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileqJNKk0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678192868454	Marionette	INFO	Marionette enabled
+1678192868462	Marionette	INFO	Listening on port 43161
+WebDriver BiDi listening on ws://localhost:42847
+Read port: 43161
+1678192868705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqJNKk0/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678192871868	Marionette	INFO	Stopped listening on port 35239
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:42847/devtools/browser/1fef9c48-ba09-45b8-801b-fb795fc67178
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678192909068	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1678194530904	geckodriver	INFO	Listening on 127.0.0.1:52157
+1678194531468	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 15" "--remote-debugging-port" "36751" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile5UeAKt"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678194533148	Marionette	INFO	Marionette enabled
+1678194533157	Marionette	INFO	Listening on port 38883
+WebDriver BiDi listening on ws://localhost:36751
+Read port: 38883
+1678194533466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5UeAKt/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:36751/devtools/browser/0e2105ca-2070-40c8-994a-f6baefb86e94
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678194559302	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:234:19
+TimedPromise@chrome://remote/content/marionette/sync.js:219:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://uz-appointment.visametric.com"
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678194677679	Marionette	INFO	Stopped listening on port 38883
+1678202306245	geckodriver	INFO	Listening on 127.0.0.1:34101
+1678202306812	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm-using" "--dis ... 15" "--remote-debugging-port" "48653" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile8xSwre"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1678202308245	Marionette	INFO	Marionette enabled
+1678202308256	Marionette	INFO	Listening on port 45855
+WebDriver BiDi listening on ws://localhost:48653
+Read port: 45855
+1678202308504	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8xSwre/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:48653/devtools/browser/12de7d44-3ceb-401c-828d-8e2176be30c9
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1678202401211	Marionette	INFO	Stopped listening on port 45855
+1678202793457	geckodriver	INFO	Listening on 127.0.0.1:50001
+1678202794021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 36" "--remote-debugging-port" "46971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileKge94C"
+*** You are running in headless mode.
+1678202794822	Marionette	INFO	Marionette enabled
+1678202794831	Marionette	INFO	Listening on port 44565
+WebDriver BiDi listening on ws://localhost:46971
+Read port: 44565
+1678202795059	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileKge94C/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:46971/devtools/browser/0b13c1a6-9e41-448a-b7eb-875d1afced26
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678202833661	geckodriver	INFO	Listening on 127.0.0.1:46913
+1678202834228	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 15" "--remote-debugging-port" "36339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileL9qJ26"
+*** You are running in headless mode.
+1678202835030	Marionette	INFO	Marionette enabled
+1678202835046	Marionette	INFO	Listening on port 38787
+WebDriver BiDi listening on ws://localhost:36339
+Read port: 38787
+1678202835340	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileL9qJ26/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:36339/devtools/browser/25f489e0-d48b-47b4-ae7d-f69c7b7cd964
+1678202853565	geckodriver	INFO	Listening on 127.0.0.1:37863
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678202854135	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... .0" "--remote-debugging-port" "35971" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesxuyjy"
+*** You are running in headless mode.
+1678202854934	Marionette	INFO	Marionette enabled
+1678202854943	Marionette	INFO	Listening on port 41393
+WebDriver BiDi listening on ws://localhost:35971
+Read port: 41393
+1678202855232	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesxuyjy/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:35971/devtools/browser/3c9de55f-eddb-4fea-8719-8c5ea0329382
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1678202863646	geckodriver	INFO	Listening on 127.0.0.1:55339
+1678202864210	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... .0" "--remote-debugging-port" "47933" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileR1l70I"
+*** You are running in headless mode.
+1678202864962	Marionette	INFO	Marionette enabled
+1678202864971	Marionette	INFO	Listening on port 36199
+WebDriver BiDi listening on ws://localhost:47933
+Read port: 36199
+1678202865221	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileR1l70I/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:47933/devtools/browser/f9080f25-8ea5-4de3-ab6b-36b253d32b82
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678202889983	geckodriver	INFO	Listening on 127.0.0.1:59021
+1678202890554	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 36" "--remote-debugging-port" "55437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileQC4Fbe"
+*** You are running in headless mode.
+1678202891461	Marionette	INFO	Marionette enabled
+1678202891472	Marionette	INFO	Listening on port 42003
+WebDriver BiDi listening on ws://localhost:55437
+Read port: 42003
+1678202891762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQC4Fbe/search.json.mozlz4", (void 0)))
+1678202894372	geckodriver	INFO	Listening on 127.0.0.1:46235
+1678202895250	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... .0" "--remote-debugging-port" "37173" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilelmKEtG"
+*** You are running in headless mode.
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+1678202898910	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:55437/devtools/browser/80490b24-36ec-4d1b-8545-a4dde5fb4128
+1678202898957	Marionette	INFO	Listening on port 37865
+Read port: 37865
+WebDriver BiDi listening on ws://localhost:37173
+1678202899675	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelmKEtG/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:37173/devtools/browser/3a6f8d23-c460-48b9-a615-f2a7a2cd3b5d
+1678202915561	geckodriver	INFO	Listening on 127.0.0.1:34261
+1678202916126	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 36" "--remote-debugging-port" "43773" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileYB1QlM"
+*** You are running in headless mode.
+1678202916927	Marionette	INFO	Marionette enabled
+1678202916941	Marionette	INFO	Listening on port 38505
+WebDriver BiDi listening on ws://localhost:43773
+Read port: 38505
+1678202917210	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYB1QlM/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:43773/devtools/browser/a41114af-a7c4-4508-84bc-05dc696454b2
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678202933814	geckodriver	INFO	Listening on 127.0.0.1:43077
+1678202934382	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 36" "--remote-debugging-port" "59925" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileHHCraz"
+*** You are running in headless mode.
+1678202935329	Marionette	INFO	Marionette enabled
+1678202935343	Marionette	INFO	Listening on port 40753
+WebDriver BiDi listening on ws://localhost:59925
+Read port: 40753
+1678202935622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHHCraz/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:59925/devtools/browser/267e1e53-6fba-420d-82bd-2054bce34fdd
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678202992281	geckodriver	INFO	Listening on 127.0.0.1:50407
+1678202992903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... .0" "--remote-debugging-port" "49817" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileNjxuaS"
+*** You are running in headless mode.
+1678202994931	Marionette	INFO	Marionette enabled
+1678202994949	Marionette	INFO	Listening on port 38737
+WebDriver BiDi listening on ws://localhost:49817
+Read port: 38737
+1678202995921	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNjxuaS/search.json.mozlz4", (void 0)))
+1678203002044	geckodriver	INFO	Listening on 127.0.0.1:34557
+1678203002778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... .0" "--remote-debugging-port" "43437" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilesmjUfg"
+*** You are running in headless mode.
+1678203007002	Marionette	INFO	Marionette enabled
+1678203007030	Marionette	INFO	Listening on port 33807
+Read port: 33807
+WebDriver BiDi listening on ws://localhost:43437
+1678203008245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:49817/devtools/browser/5538ad6d-2a7b-42d5-9ca2-69bb04753c76
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesmjUfg/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:43437/devtools/browser/9c7dfb41-2784-42aa-a5fb-9cbdfa698c75
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+1678203063002	geckodriver	INFO	Listening on 127.0.0.1:36839
+1678203063728	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 15" "--remote-debugging-port" "38905" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewuMbDG"
+*** You are running in headless mode.
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678203070164	Marionette	INFO	Marionette enabled
+1678203070218	Marionette	INFO	Listening on port 45621
+WebDriver BiDi listening on ws://localhost:38905
+Read port: 45621
+Read port: 45621
+1678203072003	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewuMbDG/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:38905/devtools/browser/598e9029-85cc-48df-820e-4896107d0d0f
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+JavaScript warning: https://uz-appointment.visametric.com/uz/appointment-form, line 1509: unreachable code after return statement
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678203155555	geckodriver	INFO	Listening on 127.0.0.1:56173
+1678203157597	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--headless" "--no-sandbox" "--disable-setuid-sandbox" "--disable-dev-shm- ... 15" "--remote-debugging-port" "52665" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileelX50K"
+*** You are running in headless mode.
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678203171073	Marionette	INFO	Marionette enabled
+1678203171195	Marionette	INFO	Listening on port 41275
+Read port: 41275
+WebDriver BiDi listening on ws://localhost:52665
+Read port: 41275
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+1678203173410	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+[GFX1-]: Unrecognized feature ACCELERATED_CANVAS2D
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileelX50K/search.json.mozlz4", (void 0)))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
