@@ -2,6 +2,9 @@ from pathlib import Path
 import os
 import environ
 
+from celery.schedules import crontab
+from .tasks import send_notification
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env().read_env(os.path.join(BASE_DIR, ".env"))
@@ -28,6 +31,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "visametric_bot",
 ]
+
+CELERY_BEAT_SCHEDULE = {
+    "download_data": {
+        "task": "config.tasks.download_data",
+        "schedule": crontab(minute="*/10"),
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

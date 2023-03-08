@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 
-import schedule
 from django.http.response import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
@@ -202,18 +201,3 @@ def main(request):
         pass
 
     return HttpResponse("bot is working fine")
-
-# def send():
-#     obj = WebScraper(Customer.objects.last())
-#     if obj.check_availability():
-#         send_message(
-#             "Schengen visaga bo'sh joy ochildi",
-#             1535815443,
-#         )
-#     else:
-#         print("There are no any awailable ")
-
-# schedule.every(1).minutes.do(send)
-
-# while True:
-#     schedule.run_pending()
