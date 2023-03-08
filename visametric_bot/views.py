@@ -198,6 +198,11 @@ def main(request):
             pass
 
     elif callback_data == TURN_ON_CALLBACK_DATA:
-        pass
+        if WebScraper(Customer.objects.last()).check_availability():
+            send_message(
+                text="Ro'yhatga olmoqchi bo'lgan klientlaringizni tanlang",
+                chat_id=user_id,
+                menu=get_clients(for_registering=True)
+            )
 
     return HttpResponse("bot is working fine")

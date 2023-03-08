@@ -27,19 +27,30 @@ def navigation_keyboards():
     
     return NAVIGATION_BTNS
 
-def get_clients(plan="monthly", back_btn=False, back_to=None):
-    clients = Customer()
-    clients = clients.get_all_customers(plan)
-    markup = []
-    for client in clients:
-        markup.append(
-            [
-                {"text": client.get_full_name(), "callback_data": f"{client.pk}"},
-                {"text": "✏️", "callback_data": f"action:edit-{client.pk}"},
-                {"text": "❌", "callback_data": f"action:remove-{client.pk}"},
-            ]
-            
-        )
+def get_clients(plan="monthly", back_btn=False, back_to=None, for_registering=False):
+    if for_registering:
+        clients = Customer.objects.filter(is_active=True, is_registered=False)
+        markup = []
+        for client in clients:
+            markup.append(
+                [
+                    {"text": client.get_full_name(), "callback_data": f"{client.pk}"},
+                    {"text": "✅", "callback_data": f"action:add_to_register-{client.pk}"},
+                ]
+                
+            )
+    else:
+        clients = Customer().get_all_customers(plan)
+        markup = []
+        for client in clients:
+            markup.append(
+                [
+                    {"text": client.get_full_name(), "callback_data": f"{client.pk}"},
+                    {"text": "✏️", "callback_data": f"action:edit-{client.pk}"},
+                    {"text": "❌", "callback_data": f"action:remove-{client.pk}"},
+                ]
+                
+            )
 
 
     return {

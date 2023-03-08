@@ -35,7 +35,7 @@ INSTALLED_APPS = [
 CELERY_BEAT_SCHEDULE = {
     "download_data": {
         "task": "config.tasks.download_data",
-        "schedule": crontab(minute="*/10"),
+        "schedule": crontab(minute="*/1"),
     },
 }
 

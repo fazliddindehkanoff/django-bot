@@ -6,22 +6,25 @@ services:
       context: .
       dockerfile: Dockerfile.prod
     command: gunicorn config.wsgi:application --bind 0.0.0.0:8003
+    volumes:
+      - ./static:/home/app/web/static
+      - ./media:/home/app/web/media
+      - ./celery:/home/app/web
+      - ./celery-beat:/home/app/web
     ports:
-      - "8003:8003"
+      - 8003:8003
+    expose:
+      - 8003
     env_file:
-      - ./.env.prod
+      - ./.env.prod 
     depends_on:
       - redis
       - celery
       - celery-beat
       - db
-    volumes:
-      - static_volume:/home/app/web/static
-      - media_volume:/home/app/web/media
     logging:
-      driver: "json-file"
       options:
-        max-size: "10m"
+        max-size: 10m
 
   db:
     image: postgres:13.0-alpine
@@ -30,43 +33,29 @@ services:
     env_file:
       - ./.env.prod.db
     logging:
-      driver: "json-file"
       options:
-        max-size: "10m"
+        max-size: 10m
 
   redis:
     image: redis
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
 
   celery:
     build: .
     command: celery -A config worker -l info
+    volumes:
+      - .:/usr/src/app/
     env_file:
       - ./.env.prod
-    volumes:
-      - celery_volume:/usr/src/app/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
 
   celery-beat:
     build: .
     command: celery -A config beat -l info
+    volumes:
+      - .:/usr/src/app/
     env_file:
       - ./.env.prod
-    volumes:
-      - celery_volume:/usr/src/app/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
 
 volumes:
   postgres_data:
   static_volume:
   media_volume:
-  celery_volume:
