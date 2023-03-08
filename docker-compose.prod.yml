@@ -55,7 +55,7 @@ services:
       options:
         max-size: "10m"
 
-  celery:
+  celery-beat:
     build:
       context: .
       dockerfile: ./celery/Dockerfile
