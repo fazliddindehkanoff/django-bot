@@ -16,7 +16,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://visametric.frontguru.uz"
 ]
 
-BOT_TOKEN = "fasdfas"
+BOT_TOKEN = env("BOT_TOKEN")
 
 INSTALLED_APPS = [
     "jazzmin",
