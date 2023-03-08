@@ -27,20 +27,23 @@ def navigation_keyboards():
     
     return NAVIGATION_BTNS
 
-def get_clients(plan="monthly", back_btn=False, back_to=None, for_registering=False):
+def get_clients(plan="monthly", back_btn=False, back_to=None, for_registering=False, add_next_btn=False):
     if for_registering:
         clients = Customer.objects.filter(is_active=True, is_registered=False)
-        markup = []
-        for client in clients:
-            markup.append(
-                [
-                    {"text": client.get_full_name(), "callback_data": f"{client.pk}"},
-                    {"text": "✅", "callback_data": f"action:add_to_register-{client.pk}"},
-                ]
-                
-            )
+        if len(clients)>0:
+            markup = []
+            for client in clients:
+                markup.append(
+                    [
+                        {"text": client.get_full_name(), "callback_data": f"{client.pk}"},
+                        {"text": "✅", "callback_data": f"action:add_to_register-{client.pk}"},
+                    ]
+                    
+                )
+        else:
+            add_next_btn = True
     else:
-        clients = Customer().get_all_customers(plan)
+        clients = Customer.get_all_customers(plan)
         markup = []
         for client in clients:
             markup.append(
@@ -51,7 +54,12 @@ def get_clients(plan="monthly", back_btn=False, back_to=None, for_registering=Fa
                 ]
                 
             )
-
+    if add_next_btn:
+        markup.append(
+            [
+                {"text": "Yakunlash", "callback_data": "finish_registering"}
+            ]
+        )
 
     return {
         "inline_keyboard":markup

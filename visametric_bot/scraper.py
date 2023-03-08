@@ -16,6 +16,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
 
+from .helpers import is_valid_url
 from .models import Customer
 
 USER_AGENT_LIST = (
@@ -186,7 +187,11 @@ class WebScraper:
 
             self.driver.implicitly_wait(3)
             self.driver.execute_script('document.getElementById("btnAppServicesNext").click()')
-            print(self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href"))   
+            while not is_valid_url(self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href")):
+                self._delay()
+            self.customer.is_active = False
+            self.customer.url_for_document = self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href")
+            self.customer.save()
             # driver.quit()
 
     def solve_recaptcha(self):

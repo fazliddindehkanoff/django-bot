@@ -183,6 +183,14 @@ def main(request):
             menu=get_clients()
         )
 
+    elif callback_data == TURN_ON_CALLBACK_DATA:
+        if WebScraper(Customer.objects.last()).check_availability():
+            send_message(
+                text="Ro'yhatga olmoqchi bo'lgan klientlaringizni tanlang",
+                chat_id=user_id,
+                menu=get_clients(for_registering=True)
+            )
+
     elif callback_data.startswith("action"):
         action = callback_data.split(":")[1].split("-")
         delete_message(user_id, callback_message_id)
@@ -197,12 +205,28 @@ def main(request):
         elif action[0] == "edit":
             pass
 
-    elif callback_data == TURN_ON_CALLBACK_DATA:
-        if WebScraper(Customer.objects.last()).check_availability():
+        elif action[0] == "add_to_register":
+            Customer.remove_customer(pk=action[1])
             send_message(
-                text="Ro'yhatga olmoqchi bo'lgan klientlaringizni tanlang",
+                text="Klient muvaffaqiyatli o'chirildi",
                 chat_id=user_id,
-                menu=get_clients(for_registering=True)
+                menu=get_clients(add_next=True)
             )
+
+    elif callback_data == "finish_registering":
+        customers = Customer.objects.filter(is_active=True, is_registered=True)
+        send_message(
+            text="Klientlar ro'yhatga olina boshladi :)",
+            chat_id=user_id,
+        )
+        for customer in customers:
+            WebScraper(customer).fill_form()
+
+        send_message(
+            text="Klientlar ro'yhatga olinish muvaffaqiyatli yakunlandi",
+            chat_id=user_id,
+            menu=main_menu_keyboards()
+        )
+        User.set_state(user_id, "start")
 
     return HttpResponse("bot is working fine")

@@ -1,4 +1,5 @@
 from datetime import datetime
+from urllib.parse import urlparse
 
 def get_message(update):
     if not "message" in update:
@@ -50,5 +51,12 @@ def get_callback_data(update):
 def is_date_available(date: str):
     try:
         return datetime.strptime(date, "%Y-%m-%d").date()
+    except ValueError:
+        return False
+    
+def is_valid_url(url):
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
     except ValueError:
         return False
