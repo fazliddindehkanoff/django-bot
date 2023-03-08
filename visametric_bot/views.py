@@ -203,18 +203,17 @@ def main(request):
 
     return HttpResponse("bot is working fine")
 
-def send_notification():
-    def send():
-        obj = WebScraper(Customer.objects.last())
-        if obj.check_availability():
-            send_message(
-                "Schengen visaga bo'sh joy ochildi",
-                1535815443,
-            )
-        else:
-            print("Failed to send data.")
+def send():
+    obj = WebScraper(Customer.objects.last())
+    if obj.check_availability():
+        send_message(
+            "Schengen visaga bo'sh joy ochildi",
+            1535815443,
+        )
+    else:
+        print("There are no any awailable ")
 
-    schedule.every(1).minutes.do(send)
+schedule.every(1).minutes.do(send)
 
-    while True:
-        schedule.run_pending()
+while True:
+    schedule.run_pending()
