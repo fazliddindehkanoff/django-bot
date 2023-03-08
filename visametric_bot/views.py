@@ -1,6 +1,7 @@
 import json
 from datetime import datetime
 
+import schedule
 from django.http.response import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 
@@ -200,23 +201,20 @@ def main(request):
     elif callback_data == TURN_ON_CALLBACK_DATA:
         pass
 
-    elif message == "/turn_on_notification":
-        notification = True
+    return HttpResponse("bot is working fine")
 
-    elif message == "/turn_off_notification":
-        notification = False
-        send_message(
-            "Schengen visa haqida ma'lumot berilish to'xtatildi buni qayta boshlash uchun <b>/turn_on_notification</b> commandasini yuboring",
-            user_id
-        )
-    
-    while notification:
+def send_notification():
+    def send():
         obj = WebScraper(Customer.objects.last())
         if obj.check_availability():
             send_message(
                 "Schengen visaga bo'sh joy ochildi",
-                user_id,
+                1535815443,
             )
+        else:
+            print("Failed to send data.")
 
+    schedule.every(1).minutes.do(send)
 
-    return HttpResponse("bot is working fine")
+    while True:
+        schedule.run_pending()

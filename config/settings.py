@@ -12,7 +12,11 @@ DEBUG = env("DEBUG", default="1") == "1"
 
 ALLOWED_HOSTS = ["*"]
 
-BOT_TOKEN = env("BOT_TOKEN")
+CSRF_TRUSTED_ORIGINS = [
+    "https://visametric.frontguru.uz"
+]
+
+BOT_TOKEN = "fasdfas"
 
 INSTALLED_APPS = [
     "jazzmin",
