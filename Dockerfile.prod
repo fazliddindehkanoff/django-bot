@@ -14,9 +14,10 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apk add libffi-dev
 
-# Install ffmpeg dependencies
-RUN apk add --no-cache ffmpeg
-RUN chmod a+x /usr/bin/ffmpeg
+# Download and install the latest version of ChromeDriver
+RUN wget -q https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip -O /tmp/chromedriver.zip && \
+    unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/ && \
+    rm /tmp/chromedriver.zip
 
 # install psycopg2 dependencies
 RUN apk update \
