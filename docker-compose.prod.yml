@@ -16,6 +16,7 @@ services:
       - celery-beat
       - db
     volumes:
+      - .:/usr/src/app/
       - static_volume:/home/app/web/static
       - media_volume:/home/app/web/media
     logging:
@@ -49,7 +50,7 @@ services:
     env_file:
       - ./.env.prod
     volumes:
-      - ./usr/src/app/
+      - .:/usr/src/app/
     logging:
       driver: "json-file"
       options:
@@ -63,7 +64,7 @@ services:
     env_file:
       - ./.env.prod
     volumes:
-      - ./usr/src/app/
+      - .:/usr/src/app/
     logging:
       driver: "json-file"
       options:
