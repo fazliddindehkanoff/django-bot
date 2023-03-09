@@ -32,12 +32,12 @@ INSTALLED_APPS = [
     "visametric_bot",
 ]
 
-CELERY_BEAT_SCHEDULE = {
-    "send_notification": {
-        "task": "config.tasks.send_notification",
-        "schedule": crontab(minute="*/1"),
-    },
-}
+# CELERY_BEAT_SCHEDULE = {
+#     "send_notification": {
+#         "task": "config.tasks.send_notification",
+#         "schedule": crontab(minute="*/1"),
+#     },
+# }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
