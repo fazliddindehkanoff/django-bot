@@ -43,9 +43,7 @@ services:
         max-size: "10m"
 
   celery:
-    build:
-      context: .
-      dockerfile: ./celery/Dockerfile
+    build: .
     command: celery -A config worker -l info
     env_file:
       - ./.env.prod
@@ -57,9 +55,7 @@ services:
         max-size: "10m"
 
   celery-beat:
-    build:
-      context: .
-      dockerfile: ./celery/Dockerfile
+    build: .
     command: celery -A config beat -l info
     env_file:
       - ./.env.prod
@@ -74,4 +70,3 @@ volumes:
   postgres_data:
   static_volume:
   media_volume:
-  celery_volume:
