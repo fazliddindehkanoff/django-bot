@@ -12,6 +12,8 @@ WORKDIR /home/user/web
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
+RUN apk add libffi-dev
+
 # Install ffmpeg dependencies
 RUN apk add --no-cache ffmpeg
 RUN chmod a+x /usr/bin/ffmpeg

@@ -8,69 +8,51 @@ services:
     command: gunicorn config.wsgi:application --bind 0.0.0.0:8003
     ports:
       - "8003:8003"
+        volumes:
+      - .:/home/user/web
+    ports:
+      - 8000:8000
+    expose:
+      - 8000
     env_file:
       - ./.env.prod
     depends_on:
-      - redis
-      - celery
-      - celery-beat
       - db
-    volumes:
-      - .:/usr/src/app/
-      - static_volume:/home/app/web/static
-      - media_volume:/home/app/web/media
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
 
   db:
     image: postgres:13.0-alpine
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - pg_data:/var/lib/postgresql/data/
     env_file:
       - ./.env.prod.db
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-
+  
   redis:
-    image: redis
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
+    image: redis:alpine
 
   celery:
-    build: 
+    restart: always
+    build:
       context: .
-      dockerfile: Dockerfile.prod
-    command: celery -A config worker -l info
-    env_file:
-      - ./.env.prod
+    command: celery -A nyct_bot worker -l info
     volumes:
-      - .:/usr/src/app/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
+      - .:/home/user/web
+    env_file:
+      - ./.env.prod.db
+    depends_on:
+      - db
+      - redis
+      - web
 
   celery-beat:
-    build: 
+    build:
       context: .
-      dockerfile: Dockerfile.prod
-    command: celery -A config beat -l info
+    command: celery -A nyct_bot beat -l info
+    volumes:
+      - .:/home/user/web
     env_file:
       - ./.env.prod
-    volumes:
-      - .:/usr/src/app/
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
+    depends_on:
+      - redis
 
 volumes:
-  postgres_data:
-  static_volume:
-  media_volume:
+  pg_data:
