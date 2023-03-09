@@ -38,7 +38,7 @@ class WebScraper:
             A method that configures the selenium web driver and opens up a browser instance
             If the '--headless' argument was added, the web driver runs in the background without a GUI
         """
-        chrome_options = webdriver.FirefoxOptions()
+        chrome_options = webdriver.ChromeOptions()
 
         # uncomment below line if you want to run it without a GUI (mainly on VPS)
 
@@ -57,7 +57,7 @@ class WebScraper:
         user_agent = random.choice(USER_AGENT_LIST)
         chrome_options.add_argument(f"user-agent={user_agent}")
 
-        self.driver = webdriver.Firefox(
+        self.driver = webdriver.Chrome(
             options=chrome_options
         )
 
