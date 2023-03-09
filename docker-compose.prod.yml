@@ -8,8 +8,8 @@ services:
     command: gunicorn config.wsgi:application --bind 0.0.0.0:8003
     ports:
       - "8003:8003"
-    volumes:
-      - .:/home/user/web
+        volumes:
+      - .:/usr/src/app/
     ports:
       - 8000:8000
     expose:
@@ -35,7 +35,7 @@ services:
       context: .
     command: celery -A nyct_bot worker -l info
     volumes:
-      - .:/home/user/web
+      - .:/usr/src/app/
     env_file:
       - ./.env.prod.db
     depends_on:
@@ -48,7 +48,7 @@ services:
       context: .
     command: celery -A nyct_bot beat -l info
     volumes:
-      - .:/home/user/web
+      - .:/usr/src/app/
     env_file:
       - ./.env.prod
     depends_on:
