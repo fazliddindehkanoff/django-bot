@@ -3,7 +3,7 @@ import os
 import environ
 
 from celery.schedules import crontab
-from .tasks import send_notification
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
