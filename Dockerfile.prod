@@ -14,7 +14,8 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apk add libffi-dev
 
-RUN apt-get update && apt-get install -y curl wget unzip
+RUN apk update && apk add --no-cache curl wget unzip
+
 # Download and install the latest version of ChromeDriver
 RUN wget -q https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip -O /tmp/chromedriver.zip && \
     unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/ && \
