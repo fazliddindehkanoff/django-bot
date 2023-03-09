@@ -58,6 +58,7 @@ class WebScraper:
         chrome_options.add_argument(f"user-agent={user_agent}")
 
         self.driver = webdriver.Chrome(
+            executable_path="/usr/bin/chromedriver",
             options=chrome_options
         )
 
