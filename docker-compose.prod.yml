@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    command: celery -A nyct_bot worker -l info
+    command: celery -A config worker -l info
     volumes:
       - .:/usr/src/app/
     env_file:
@@ -48,7 +48,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-    command: celery -A nyct_bot beat -l info
+    command: celery -A config beat -l info
     volumes:
       - .:/usr/src/app/
     env_file:
