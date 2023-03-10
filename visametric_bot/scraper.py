@@ -42,7 +42,7 @@ class WebScraper:
 
         # uncomment below line if you want to run it without a GUI (mainly on VPS)
 
-        chrome_options.add_argument("--headless")
+        # chrome_options.add_argument("--headless")
 
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-setuid-sandbox")
@@ -57,10 +57,7 @@ class WebScraper:
         user_agent = random.choice(USER_AGENT_LIST)
         chrome_options.add_argument(f"user-agent={user_agent}")
 
-        self.driver = webdriver.Chrome(
-            executable_path="/usr/bin/chromedriver",
-            options=chrome_options
-        )
+        self.driver = webdriver.Chrome(options=chrome_options)
 
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         self._delay()
@@ -149,11 +146,18 @@ class WebScraper:
 
             self.fill_personal_info()
 
-            self.driver.find_element(By.ID, 'btnAppPersonalNext').click()
-            self.driver.find_element(By.ID, 'btnAppPreviewNext').click()
-
-            self.driver.find_element(By.ID, 'personalapproveTerms').click()
-            self.driver.find_element(By.ID, 'btnCreditCard').click()
+            btn = self.driver.find_element(By.ID, 'btnAppPersonalNext')
+            self.driver.execute_script("arguments[0].scrollIntoView();", btn)
+            btn.click()
+            btn = self.driver.find_element(By.ID, 'btnAppPreviewNext')
+            self.driver.execute_script("arguments[0].scrollIntoView();", btn)
+            btn.click()
+            btn = self.driver.find_element(By.ID, 'personalapproveTerms')
+            self.driver.execute_script("arguments[0].scrollIntoView();", btn)
+            btn.click()
+            btn = self.driver.find_element(By.ID, 'btnCreditCard')
+            self.driver.execute_script("arguments[0].scrollIntoView();", btn)
+            btn.click()
 
             starting_journey = datetime.today().date() + timedelta(days=10)
             ending_journey = starting_journey + timedelta(days=10)
@@ -186,10 +190,10 @@ class WebScraper:
             except:
                 pass
 
-            self.driver.implicitly_wait(3)
-            self.driver.execute_script('document.getElementById("btnAppServicesNext").click()')
-            while not is_valid_url(self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href")):
-                self._delay()
+            time.sleep(3)
+            
+            self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href")
+                
             self.customer.is_active = False
             self.customer.url_for_document = self.driver.find_elements(By.TAG_NAME, "a")[-1].get_attribute("href")
             self.customer.save()
@@ -217,32 +221,36 @@ class WebScraper:
         
         try:
             time.sleep(3)
-            self.driver.find_element(By.ID, "recaptcha-audio-button").click()
-            # Download and convert the audio file
-            src = self.driver.find_element(By.ID, "audio-source").get_attribute("src")
-            path_to_mp3 = os.path.normpath(os.path.join(os.getcwd(), "sample.mp3"))
-            path_to_wav = os.path.normpath(os.path.join(os.getcwd(), "sample.wav"))
-            urllib.request.urlretrieve(src, path_to_mp3)
-
             try:
-                sound = pydub.AudioSegment.from_mp3(path_to_mp3)
-                sound.export(path_to_wav, format="wav")
-                sample_audio = sr.AudioFile(path_to_wav)
-            except Exception as e:
-                print("[ERR] Unable to convert audio file: ", e)
-                return None
+                self.driver.find_element(By.ID, "recaptcha-audio-button").click()
+                src = self.driver.find_element(By.ID, "audio-source").get_attribute("src")
+                path_to_mp3 = os.path.normpath(os.path.join(os.getcwd(), "sample.mp3"))
+                path_to_wav = os.path.normpath(os.path.join(os.getcwd(), "sample.wav"))
+                urllib.request.urlretrieve(src, path_to_mp3)
 
-            r = sr.Recognizer()
-            with sample_audio as source:
-                audio = r.record(source)
-            key = r.recognize_google(audio)
+                try:
+                    sound = pydub.AudioSegment.from_mp3(path_to_mp3)
+                    sound.export(path_to_wav, format="wav")
+                    sample_audio = sr.AudioFile(path_to_wav)
+                except Exception as e:
+                    print("[ERR] Unable to convert audio file: ", e)
+                    return None
 
-            # Submit the reCAPTCHA response
-            self.driver.switch_to.default_content()
-            self.driver.switch_to.frame(recaptcha_challenge_frame)
-            audio_response = self.driver.find_element(By.ID, "audio-response")
-            audio_response.send_keys(key.lower())
-            audio_response.send_keys(Keys.ENTER)
-            return key.lower()
+                r = sr.Recognizer()
+                with sample_audio as source:
+                    audio = r.record(source)
+                key = r.recognize_google(audio)
+
+                # Submit the reCAPTCHA response
+                self.driver.switch_to.default_content()
+                self.driver.switch_to.frame(recaptcha_challenge_frame)
+                audio_response = self.driver.find_element(By.ID, "audio-response")
+                audio_response.send_keys(key.lower())
+                audio_response.send_keys(Keys.ENTER)
+                return key.lower()
+            except:
+                pass
+            # Download and convert the audio file
+            
         except NoSuchElementException:
             pass

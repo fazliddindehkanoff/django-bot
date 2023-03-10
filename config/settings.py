@@ -70,14 +70,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": env("DB_ENGINE", default="django.db.backends.sqlite3"),
+#         "NAME": env("DB_NAME", default=str(BASE_DIR / "db.sqlite3")),
+#         "HOST": env("DB_HOST"),
+#         "PORT": 5432,
+#         "USER": env("DB_USER"),
+#         "PASSWORD": env("DB_PASS"),
+#     }
+# }
+
 DATABASES = {
-    "default": {
-        "ENGINE": env("DB_ENGINE", default="django.db.backends.sqlite3"),
-        "NAME": env("DB_NAME", default=str(BASE_DIR / "db.sqlite3")),
-        "HOST": env("DB_HOST"),
-        "PORT": 5432,
-        "USER": env("DB_USER"),
-        "PASSWORD": env("DB_PASS"),
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

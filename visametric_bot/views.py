@@ -206,11 +206,13 @@ def main(request):
             pass
 
         elif action[0] == "add_to_register":
-            Customer.remove_customer(pk=action[1])
+            customer = Customer.objects.filter(pk=action[1]).first()
+            customer.is_registered = True
+            customer.save()
             send_message(
-                text="Klient muvaffaqiyatli o'chirildi",
+                text="Klient muvaffaqiyatli ro'yhatga olish uchun qo'shildi",
                 chat_id=user_id,
-                menu=get_clients(add_next=True)
+                menu=get_clients(add_next_btn=True)
             )
 
     elif callback_data == "finish_registering":
