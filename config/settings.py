@@ -11,6 +11,7 @@ environ.Env().read_env(os.path.join(BASE_DIR, ".env.prod"))
 
 SECRET_KEY = env("SECRET_KEY", default="foo")
 
+USE_REMOTE_DRIVER = env("USE_REMOTE_DRIVER", default="1") == "1"
 DEBUG = env("DEBUG", default="1") == "1"
 
 ALLOWED_HOSTS = ["*"]

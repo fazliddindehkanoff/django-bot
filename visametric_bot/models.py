@@ -39,7 +39,7 @@ class Customer(models.Model):
     def remove_customer(pk):
         Customer.objects.filter(id=pk).first().delete()
 
-    def get_all_customers(self, plan):
+    def get_all_customers(plan):
         return Customer.objects.filter(plan=plan)
     
     def get_full_name(self):

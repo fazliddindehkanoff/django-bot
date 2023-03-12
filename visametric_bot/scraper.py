@@ -15,6 +15,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+from django.conf import settings
 
 from .helpers import is_valid_url
 from .models import Customer
@@ -38,11 +42,12 @@ class WebScraper:
             A method that configures the selenium web driver and opens up a browser instance
             If the '--headless' argument was added, the web driver runs in the background without a GUI
         """
+        
         chrome_options = webdriver.ChromeOptions()
 
         # uncomment below line if you want to run it without a GUI (mainly on VPS)
 
-        # chrome_options.add_argument("--headless")
+        chrome_options.add_argument("--headless")
 
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-setuid-sandbox")
@@ -57,7 +62,10 @@ class WebScraper:
         user_agent = random.choice(USER_AGENT_LIST)
         chrome_options.add_argument(f"user-agent={user_agent}")
 
-        self.driver = webdriver.Chrome(options=chrome_options)
+        if settings.USE_REMOTE_DRIVER:
+            self.driver = webdriver.Remote("http://127.0.0.1:4444/wd/hub", DesiredCapabilities.CHROME)
+        else:
+            self.driver = webdriver.Firefox(options=chrome_options)
 
         self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         self._delay()

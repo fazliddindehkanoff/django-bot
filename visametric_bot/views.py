@@ -212,7 +212,7 @@ def main(request):
             send_message(
                 text="Klient muvaffaqiyatli ro'yhatga olish uchun qo'shildi",
                 chat_id=user_id,
-                menu=get_clients(add_next_btn=True)
+                menu=get_clients(for_registering=True, add_next_btn=True)
             )
 
     elif callback_data == "finish_registering":

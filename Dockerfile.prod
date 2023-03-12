@@ -14,20 +14,9 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apk add libffi-dev
 
-RUN apk update && apk add --no-cache curl wget unzip
-
-# Download and install the latest version of ChromeDriver
-RUN wget -q https://chromedriver.storage.googleapis.com/$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)/chromedriver_linux64.zip -O /tmp/chromedriver.zip && \
-    unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/ && \
-    rm /tmp/chromedriver.zip
-
-ENV PATH="/usr/local/bin:${PATH}"
-
 # install psycopg2 dependencies
 RUN apk update \
-    && apk add postgresql-dev gcc python3-dev musl-dev wkhtmltopdf xvfb
-
-RUN apk --update add ttf-dejavu
+    && apk add postgresql-dev gcc python3-dev musl-dev
 
 # lint
 RUN pip install --upgrade pip
@@ -36,7 +25,7 @@ COPY . .
 # install dependencies
 COPY ./requirements.txt .
 RUN pip wheel --no-cache-dir --no-deps --wheel-dir /home/user/web/wheels -r requirements.txt
-RUN pip install python-dateutil gunicorn
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /home/user/web/wheels gunicorn
 
 
 #########
@@ -66,7 +55,6 @@ RUN apk update && apk add libpq
 COPY --from=builder /home/user/web/wheels /wheels
 COPY --from=builder /home/user/web/requirements.txt .
 RUN pip install --no-cache /wheels/*
-RUN pip install python-dateutil gunicorn
 
 # copy entrypoint.prod.sh
 COPY ./entrypoint.prod.sh .

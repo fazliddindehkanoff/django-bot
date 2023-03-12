@@ -48,7 +48,7 @@ def get_clients(plan="monthly", back_btn=False, back_to=None, for_registering=Fa
                 ]
             )
     else:
-        clients = Customer.get_all_customers("monthly")
+        clients = Customer.get_all_customers(plan="monthly")
         for client in clients:
             markup.append(
                 [
